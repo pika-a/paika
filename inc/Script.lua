@@ -1533,19 +1533,19 @@ end
 
 
 if MsgText[1] == 'اصدار السورس' or MsgText[1] == 'الاصدار' then
-return '👨🏾‍🔧┊ اصدار سورس مـاكـس : احـدث اصـدار \n📡'
+return '👨🏾‍🔧┊ اصدار سورس بيكا : احـدث اصـدار \n📡'
 end
 
 if (MsgText[1] == 'تحديث السورس' or MsgText[1] == 'تحديث السورس ™') then
 if not msg.SudoBase then return "♦️*┇*هذا الامر يخص {المطور الاساسي} فقط  \n💥" end
-local GetVerison = https.request('https://github.com/MAXTELE/max.github.io/GetVersion.txt') or 0
+local GetVerison = https.request('https://github.com/pika-a/paika.github.io/GetVersion.txt') or 0
 if GetVerison > version then
 UpdateSourceStart = true
 sendMsg(msg.chat_id_,msg.id_,'🔛*┊* يوجد تحديث جديد الان \n📡*┊* جاري تنزيل وتثبيت التحديث  ...')
 redis:set(max..":VERSION",GetVerison)
 return false
 else
-return "🔖┊سـورس مـاكـس\n👨🏾‍🔧*┊* لديـك احدث اصدار \n📦"
+return "🔖┊سـورس بيكا\n👨🏾‍🔧*┊* لديـك احدث اصدار \n📦"
 end
 return false
 end
@@ -2029,7 +2029,7 @@ return [[
 💭┇افتح ترمنال جديد 
 ⚜┇انسخ رابط كيثاب السورس  ↡
 
-`git clone https://github.com/MAXTELE/MAX.git ;cd MAX;chmod +x ins;./ins`
+`git clone https://github.com/pika-a/paika.git ;cd paika;chmod +x ins;./ins`
 ـــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
 راح يطلب منك معلومات ک تالي ↓
 
